@@ -33,5 +33,12 @@ def pca():
     plt.ylabel('component 2')
     plt.show()
 
+    # 使用主成分绘制热度图
+    plt.matshow(pca.components_, cmap='plasma')
+    plt.yticks([0, 1], ['component 1', 'component 2'])
+    plt.colorbar()
+    plt.xticks(range(len(wine.feature_names)), wine.feature_names, rotation=60, ha='left')
+    plt.show()
+
 
 pca()
