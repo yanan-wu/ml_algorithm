@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from sklearn.datasets import make_blobs
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.neural_network import MLPClassifier
-import matplotlib.pyplot as plt
 from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import train_test_split
+from sklearn.neural_network import MLPClassifier
 from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
 
 
 def simple():
